@@ -1,0 +1,39 @@
+###
+### A complete description of a Prefect Deployment for flow 'snowflake-lte-process'
+###
+name: maybenowsuka
+description: |-
+  final description of the flow.
+  The code of tasks can be found in prefect_tasks
+  :return:
+version: 8ab3e5c53cea2e6e1206d36328650333
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+tags: []
+parameters: {}
+schedule: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: snowflake-lte-process
+manifest_path: null
+storage: null
+path: /Users/svyatoslavskopyuk/poekty_vlad/prefect_flows
+entrypoint: flow.py:snowflake_lte_process
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties: {}
+  required: null
+  definitions: null
